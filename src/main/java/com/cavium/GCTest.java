@@ -6,10 +6,10 @@ import java.util.List;
 
 public class GCTest {
 	 private static final int youngArraySize = 20000;
-	 private static final int oldArraySize = 20000000;
+	 private static final int oldArraySize = 2000000;
 	 private List<String> oldStore = new ArrayList<>(oldArraySize);
 	 private List<String> youngStore = new ArrayList<>(youngArraySize);
-	 private static int nThread =48;
+	 private volatile static int nThread = 96;
 	private static long longestPause = 0;
 	    
 	 

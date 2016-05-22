@@ -32,10 +32,12 @@
 package com.cavium;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Fork;
 
 public class MyBenchmark {
 
     @Benchmark
+    @Fork(1)
     public void lseTest() {
         // This is a demo/sample template for building your JMH benchmarks. Edit as needed.
         // Put your benchmark code here.
